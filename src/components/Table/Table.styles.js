@@ -8,14 +8,19 @@ const styles = StyleSheet.create({
 
   tableDark: { backgroundColor: colors.GREYDARKMODE },
   tableLight: { backgroundColor: colors.LIGHTGREY },
+  text: {
+    fontSize: 12,
+  },
   textDark: {
     color: colors.WHITE,
   },
   textLight: { color: colors.BLACKDARKMODE },
+  title: {
+    fontSize: 14,
+    fontWeight: '700',
+  },
   titleDark: {
     color: colors.WHITE,
-    fontSize: 18,
-    fontWeight: '700',
   },
   titleLight: { color: colors.BLACKDARKMODE },
 });

@@ -41,10 +41,12 @@ export default function Table(props) {
         <DataTable.Header>
           {header.map((title, index) => {
             return (
-              <DataTable.Title index={index} style={styles.textCenter}>
+              <DataTable.Title key={index} style={styles.textCenter}>
                 <Text
-                  index={index}
-                  style={switcher ? styles.titleLight : styles.titleDark}
+                  style={[
+                    switcher ? styles.titleLight : styles.titleDark,
+                    styles.title,
+                  ]}
                 >
                   {title}
                 </Text>
@@ -57,51 +59,63 @@ export default function Table(props) {
         ) : (
           dataFetch.slice(from, to).map((data, index) => {
             return (
-              <DataTable.Row index={index}>
-                <DataTable.Cell index={index}>
+              <DataTable.Row key={index}>
+                <DataTable.Cell>
                   <Text
-                    index={index}
-                    style={switcher ? styles.textLight : styles.textDark}
+                    style={[
+                      switcher ? styles.textLight : styles.textDark,
+                      styles.text,
+                    ]}
                   >
                     {data.name}
                   </Text>
                 </DataTable.Cell>
-                <DataTable.Cell index={index}>
+                <DataTable.Cell>
                   <Text
-                    index={index}
-                    style={switcher ? styles.textLight : styles.textDark}
+                    style={[
+                      switcher ? styles.textLight : styles.textDark,
+                      styles.text,
+                    ]}
                   >
                     {data.family}
                   </Text>
                 </DataTable.Cell>
-                <DataTable.Cell index={index} style={styles.textCenter}>
+                <DataTable.Cell style={styles.textCenter}>
                   <Text
-                    index={index}
-                    style={switcher ? styles.textLight : styles.textDark}
+                    style={[
+                      switcher ? styles.textLight : styles.textDark,
+                      styles.text,
+                    ]}
                   >
                     {data.nutritions.protein}
                   </Text>
                 </DataTable.Cell>
-                <DataTable.Cell index={index} style={styles.textCenter}>
+                <DataTable.Cell style={styles.textCenter}>
                   <Text
-                    index={index}
-                    style={switcher ? styles.textLight : styles.textDark}
+                    style={[
+                      switcher ? styles.textLight : styles.textDark,
+                      styles.text,
+                    ]}
                   >
                     {data.nutritions.calories}
                   </Text>
                 </DataTable.Cell>
-                <DataTable.Cell index={index} style={styles.textCenter}>
+                <DataTable.Cell style={styles.textCenter}>
                   <Text
-                    index={index}
-                    style={switcher ? styles.textLight : styles.textDark}
+                    style={[
+                      switcher ? styles.textLight : styles.textDark,
+                      styles.text,
+                    ]}
                   >
                     {data.nutritions.sugar}
                   </Text>
                 </DataTable.Cell>
-                <DataTable.Cell index={index} style={styles.textCenter}>
+                <DataTable.Cell style={styles.textCenter}>
                   <Text
-                    index={index}
-                    style={switcher ? styles.textLight : styles.textDark}
+                    style={[
+                      switcher ? styles.textLight : styles.textDark,
+                      styles.text,
+                    ]}
                   >
                     {data.nutritions.fat}
                   </Text>

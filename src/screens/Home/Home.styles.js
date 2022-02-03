@@ -3,7 +3,7 @@ import { colors } from '../../utils/colors';
 const styles = StyleSheet.create({
   title: {
     textAlign: 'center',
-    fontSize: 25,
+    fontSize: 24,
     fontWeight: '500',
   },
 

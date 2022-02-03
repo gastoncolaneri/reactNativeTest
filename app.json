@@ -1,10 +1,10 @@
 {
   "expo": {
     "name": "Fruit Information",
-    "slug": "Fruit Information",
+    "slug": "FruitInfo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logo.png",
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/logo.png",
       "resizeMode": "contain",
@@ -19,9 +19,11 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logo.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.gastoncolaneri.fruitinfo",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/logo.png"
